@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.3</version>
+    </parent>
+
+    <groupId>com.github.marciovmartins.springframework.data.rest.expanded</groupId>
+    <artifactId>spring-boot-starter-data-rest-expanded</artifactId>
+    <version>2.6.3</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <zalando-problem-spring-web.version>
+            0.27.0
+        </zalando-problem-spring-web.version>
+        <problem-spring-web-starter-expanded.version>
+            1.0.0
+        </problem-spring-web-starter-expanded.version>
+        <spring-boot-jackson-deserializer-enum-modifier.version>
+            1.0.0
+        </spring-boot-jackson-deserializer-enum-modifier.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>problem-spring-web-starter</artifactId>
+            <version>${zalando-problem-spring-web.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.marciovmartins.problem.spring.web</groupId>
+            <artifactId>problem-spring-web-starter-expanded</artifactId>
+            <version>${problem-spring-web-starter-expanded.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.marciovmartins.jackson.databind.deser</groupId>
+            <artifactId>spring-boot-jackson-deserializer-enum-modifier</artifactId>
+            <version>${spring-boot-jackson-deserializer-enum-modifier.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
