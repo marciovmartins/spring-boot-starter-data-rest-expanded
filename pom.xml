@@ -7,12 +7,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.3</version>
+        <version>2.6.4</version>
     </parent>
 
     <groupId>com.github.marciovmartins.springframework.data.rest.expanded</groupId>
     <artifactId>spring-boot-starter-data-rest-expanded</artifactId>
-    <version>2.6.3</version>
+    <version>2.6.4</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -24,7 +24,7 @@
             1.0.0
         </problem-spring-web-starter-expanded.version>
         <spring-boot-jackson-deserializer-enum-modifier.version>
-            1.0.0
+            1.0.1
         </spring-boot-jackson-deserializer-enum-modifier.version>
     </properties>
 
@@ -49,5 +49,23 @@
             <version>${spring-boot-jackson-deserializer-enum-modifier.version}</version>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/30398025/packages/maven</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/30398025/packages/maven</url>
+        </repository>
+        <snapshotRepository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/30398025/packages/maven</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
