@@ -7,12 +7,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.4</version>
+        <version>2.6.7</version>
     </parent>
 
     <groupId>com.github.marciovmartins.springframework.data.rest.expanded</groupId>
     <artifactId>spring-boot-starter-data-rest-expanded</artifactId>
-    <version>2.6.4</version>
+    <version>2.6.7</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -21,7 +21,7 @@
             0.27.0
         </zalando-problem-spring-web.version>
         <problem-spring-web-starter-expanded.version>
-            1.0.0
+            1.0.2
         </problem-spring-web-starter-expanded.version>
         <spring-boot-jackson-deserializer-enum-modifier.version>
             1.0.1
